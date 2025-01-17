@@ -168,7 +168,7 @@
                 title: 'Error!',
                 text: 'Please complete the reCAPTCHA!',
             });
-            return false;
+            return true;
         }
 
         const respostaUsuario = parseInt(document.getElementById('math-question').value);
@@ -178,7 +178,7 @@
                 title: 'Incorrect answer!',
                 text: 'The sum provided is wrong. Please try again.',
             });
-            return false;
+            return true;
         }
         return true;
     }
